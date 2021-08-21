@@ -1,6 +1,6 @@
 let answers=document.querySelectorAll('.answers')
 let questionActive = document.querySelectorAll('.questions')
-console.log(answers)
+let arrows = document.querySelectorAll('.arrows')
 document.querySelectorAll('.questions').forEach(item => {
     item.addEventListener('click', event => {
         if(item.classList.contains('question__active')){
@@ -9,16 +9,13 @@ document.querySelectorAll('.questions').forEach(item => {
             for(var i = 0; i < answers.length; i++)
             {
                 answers[i].classList.remove('show')
-            }
-            for(var i = 0; i < questionActive.length; i++)
-            {
                 questionActive[i].classList.remove('question__active')
+                arrows[i].classList.remove('rotate')
+
             }
         }
         item.classList.toggle('question__active')
         item.nextElementSibling.classList.toggle('show')
-        
-            
+        item.childNodes[1].classList.toggle('rotate')
     })
-        })
-        
+})

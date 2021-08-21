@@ -176,6 +176,11 @@ body {
   border: 1px solid #e7e7e9;
 }
 
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .answers {
   width: 300px;
 }
