@@ -20,15 +20,5 @@ document.querySelectorAll('.questions').forEach(item => {
         
             
     })
-    // item.addEventListener('blur', event => {
-        //     console.log('bruh')
-        //     item.classList.remove('question__active')
-        //     item.nextElementSibling.classList.remove('show')
-        //   //       for(var i = 0; i < answers.length; i++)
-        //   // {
-            //   //   answers[i].classList.toggle('show')
-            //   // }
-            //   //   .classList.toggle('show')
-            //   })
         })
         
